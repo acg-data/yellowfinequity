@@ -1,0 +1,23 @@
+# Replit Configuration for Yellowfin Equity
+# This file configures how your static site runs in Replit
+
+# Configure the run command
+[run]
+command = "python3 -m http.server 8000"
+# Alternative: command = "npx serve -p 8000"
+
+[packager]
+# No packages needed - using CDN resources
+enabled = false
+
+[languages]
+# HTML/CSS/JS static site
+enabled = ["html", "css", "javascript"]
+
+[web]
+# Configure the web preview
+port = 8000
+
+[kos]
+# Disable KOS (Replit's AI assistant) for static sites
+enabled = false
