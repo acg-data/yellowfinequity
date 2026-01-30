@@ -1,6 +1,119 @@
-# Yellowfin Equity Website
+# Yellowfin Equity Website - Complete 24-Page Structure
 
-A professional, friendly M&A firm website connecting exceptional business owners with the best buyers. Built with a clean, modern design using the Yellowfin brand colors.
+## 📁 Folder Structure
+```
+yellowfin-equity/
+├── index.html              # Homepage with hero, partners carousel, stats
+├── criteria.html           # Industries overview grid
+├── about.html              # Company story, values, location
+├── contact.html            # Contact form with map
+├── industries/             # 20 individual industry criteria pages
+│   ├── b2b-services.html
+│   ├── cpg.html
+│   ├── dental.html
+│   ├── electrical.html
+│   ├── environmental.html
+│   ├── healthcare.html
+│   ├── home-services.html
+│   ├── hvac-plumbing.html
+│   ├── infrastructure.html
+│   ├── insurance.html
+│   ├── landscaping.html
+│   ├── logistics.html
+│   ├── manufacturing.html
+│   ├── msp-data.html
+│   ├── paving.html
+│   ├── pest-control.html
+│   ├── restoration.html
+│   ├── roofing.html
+│   ├── software.html
+│   └── veterinarian.html
+├── css/
+│   └── styles.css          # Shared styles with brand colors
+├── js/
+│   └── main.js             # Shared JavaScript for interactions
+├── assets/
+│   └── images/             # Empty, ready for assets
+├── server.py               # Python HTTP server for local dev
+├── .replit                 # Replit configuration
+├── REPLIT.md               # Replit deployment guide
+└── README.md               # This file
+```
+
+## ✅ All 24 Pages Complete
+
+### Core Pages (4)
+1. **index.html** - Landing page with hero, partner carousel, stats, process, deals
+2. **criteria.html** - Grid overview of all 20+ industries
+3. **about.html** - Company mission, values, Austin location
+4. **contact.html** - Full contact form with industry/revenue selectors
+
+### Industry Pages (20)
+5. **b2b-services.html** - B2B Services investment criteria
+6. **cpg.html** - Consumer Packaged Goods criteria
+7. **dental.html** - Dental practices criteria
+8. **electrical.html** - Electrical services criteria
+9. **environmental.html** - Environmental services criteria
+10. **healthcare.html** - Healthcare services criteria
+11. **home-services.html** - Home services criteria
+12. **hvac-plumbing.html** - HVAC/Plumbing criteria
+13. **infrastructure.html** - Infrastructure engineering criteria
+14. **insurance.html** - Insurance brokerages criteria
+15. **landscaping.html** - Commercial landscaping criteria
+16. **logistics.html** - Logistics and distribution criteria
+17. **manufacturing.html** - Manufacturing criteria
+18. **msp-data.html** - MSP/Data services criteria
+19. **paving.html** - Paving services criteria
+20. **pest-control.html** - Pest control criteria
+21. **restoration.html** - Restoration services criteria
+22. **roofing.html** - Roofing services criteria
+23. **software.html** - Software/SaaS criteria
+24. **veterinarian.html** - Veterinarian services criteria
+
+## 🎨 Features Implemented (All Pages)
+
+### Visual Design
+- ✅ Yellowfin brand colors (EDF0EF, 002355, FEFEFE, F9D300)
+- ✅ Light, friendly aesthetic (not aggressive dark themes)
+- ✅ Professional M&A firm styling
+- ✅ Responsive design (mobile-first)
+- ✅ Google Maps integration
+
+### Animations & Interactions
+- ✅ Partner logo carousel (infinite scroll)
+- ✅ Smooth scroll navigation
+- ✅ Mobile hamburger menu
+- ✅ Hover effects on cards and buttons
+- ✅ Form validation
+- ✅ Intersection Observer animations
+
+### UX Features
+- ✅ Consistent navigation across all pages
+- ✅ Active states in navigation
+- ✅ Contact form with dropdowns
+- ✅ SEO optimized meta descriptions
+- ✅ Semantic HTML5 structure
+
+### Technical Excellence
+- ✅ Shared CSS (700+ lines) - Brand colors applied
+- ✅ Shared JavaScript - Modular, vanilla JS
+- ✅ Python HTTP server for development
+- ✅ Replit deployment ready
+- ✅ No build step required
+
+## 🚀 Quick Deploy to Replit
+
+**Fastest way to deploy:** Clone directly into Replit in 3 commands:
+
+```bash
+git clone https://github.com/acg-data/yellowfinequity.git temp
+mv temp/* temp/.* . 2>/dev/null || true
+rm -rf temp
+```
+
+Then click **Run**! Your site is live at port 5000.
+
+For detailed instructions, see [REPLIT.md](REPLIT.md)
 
 ## 🎨 Brand Colors
 
@@ -8,18 +121,6 @@ A professional, friendly M&A firm website connecting exceptional business owners
 - **002355** - Primary text/navy accent
 - **FEFEFE** - Card backgrounds, pure white
 - **F9D300** - Bright yellow accent
-
-## 🚀 Quick Deploy to Replit
-
-**Fastest way to deploy:** Clone directly into Replit in 3 commands:
-
-```bash
-git clone https://github.com/acg-data/yellowfin-equity.git temp
-mv temp/* temp/.* . 2>/dev/null || true
-rm -rf temp
-```
-
-Then click **Run**! Your site is live.
 
 ## 📁 Site Structure
 

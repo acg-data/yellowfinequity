@@ -1,23 +1,34 @@
-# Replit Configuration for Yellowfin Equity
-# This file configures how your static site runs in Replit
+modules = ["python-3.11"]
 
-# Configure the run command
-[run]
-command = "python3 -m http.server 8000"
-# Alternative: command = "npx serve -p 8000"
+[agent]
+expertMode = true
 
-[packager]
-# No packages needed - using CDN resources
-enabled = false
+[workflows]
+runButton = "Project"
 
-[languages]
-# HTML/CSS/JS static site
-enabled = ["html", "css", "javascript"]
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
 
-[web]
-# Configure the web preview
-port = 8000
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start website"
 
-[kos]
-# Disable KOS (Replit's AI assistant) for static sites
-enabled = false
+[[workflows.workflow]]
+name = "Start website"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python server.py"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "python server.py"]
+deploymentTarget = "cloudrun"
